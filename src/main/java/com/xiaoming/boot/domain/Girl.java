@@ -3,6 +3,7 @@ package com.xiaoming.boot.domain;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.Min;
 
 /**
  * 实体类
@@ -13,6 +14,8 @@ public class Girl {
     @GeneratedValue
     private Integer id;
     private String cupSize;
+
+    @Min(value = 18,message = "未成年少女")
     private Integer age;
 
     public Girl(){
