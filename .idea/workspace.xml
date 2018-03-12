@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f341f96d-bda4-4895-a148-f1478d049081" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/domain/Result.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/handle/Exceptionhandle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/util/ResultUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xiaoming/boot/aspect/HttpAspect.class" afterPath="$PROJECT_DIR$/target/classes/com/xiaoming/boot/aspect/HttpAspect.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xiaoming/boot/contoller/GirlController.class" afterPath="$PROJECT_DIR$/target/classes/com/xiaoming/boot/contoller/GirlController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xiaoming/boot/domain/Girl.class" afterPath="$PROJECT_DIR$/target/classes/com/xiaoming/boot/domain/Girl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/enms/ResultEnum.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/exceprion/GirlExceprion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xiaoming/boot/handle/Exceptionhandle.class" afterPath="$PROJECT_DIR$/target/classes/com/xiaoming/boot/handle/Exceptionhandle.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xiaoming/boot/service/GirlService.class" afterPath="$PROJECT_DIR$/target/classes/com/xiaoming/boot/service/GirlService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/aspect/HttpAspect.java" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/aspect/HttpAspect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/contoller/GirlController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/contoller/GirlController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/domain/Girl.java" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/domain/Girl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/handle/Exceptionhandle.java" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/handle/Exceptionhandle.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/service/GirlService.java" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/service/GirlService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -74,8 +69,8 @@
       <file leaf-file-name="GirlService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoming/boot/service/GirlService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+            <state relative-caret-position="286">
+              <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,15 +78,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Exceptionhandle.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoming/boot/handle/Exceptionhandle.java">
+      <file leaf-file-name="GirlExceprion.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoming/boot/exceprion/GirlExceprion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="374">
+              <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResultEnum.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoming/boot/enms/ResultEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="17" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#476#477#0" expanded="true" />
-                <element signature="e#535#536#0" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,6 +145,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -178,9 +185,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/domain/Girl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/domain/Result.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/util/ResultUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/service/GirlService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/contoller/GirlController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/handle/Exceptionhandle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/enms/ResultEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/service/GirlService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xiaoming/boot/exceprion/GirlExceprion.java" />
       </list>
     </option>
   </component>
@@ -252,15 +261,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="boot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study2018" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="boot" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="boot" type="b2602c69:ProjectViewProjectNode" />
@@ -419,12 +419,12 @@
       <option name="presentableId" value="Default" />
       <updated>1520493893035</updated>
       <workItem from="1520493898715" duration="582000" />
-      <workItem from="1520494617467" duration="26797000" />
+      <workItem from="1520494617467" duration="28045000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27379000" />
+    <option name="totallyTimeSpent" value="28627000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="640" y="0" width="640" height="728" extended-state="0" />
@@ -439,7 +439,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39831933" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39831933" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -655,16 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoming/boot/service/GirlService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoming/boot/contoller/GirlController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -679,13 +669,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoming/boot/handle/Exceptionhandle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="374">
+          <caret line="27" column="51" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoming/boot/enms/ResultEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoming/boot/service/GirlService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoming/boot/exceprion/GirlExceprion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>

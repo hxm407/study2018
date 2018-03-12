@@ -1,6 +1,8 @@
 package com.xiaoming.boot.service;
 
 import com.xiaoming.boot.domain.Girl;
+import com.xiaoming.boot.enms.ResultEnum;
+import com.xiaoming.boot.exceprion.GirlExceprion;
 import com.xiaoming.boot.repository.GirlRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,10 +32,12 @@ public class GirlService {
         Integer age = girl.getAge();
         if(age <10){
             //返回“你还在上小学吧”
-            throw new Exception("你还在上小学吧");
+//            throw new GirlExceprion(100,"你还在上小学吧");
+            throw new GirlExceprion(ResultEnum.PRIMART_SHOOL);
         }else if(age >10 && age <16){
             //返回 “你可能在上初中”
-            throw new Exception("你可能在上初中");
+//            throw new GirlExceprion(101,"你可能在上初中");
+            throw new GirlExceprion(ResultEnum.MIDDLE_SCHOOL);
         }
     }
 }
