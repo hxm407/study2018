@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 
 /**
  * 实体类
@@ -17,6 +18,8 @@ public class Girl {
 
     @Min(value = 18,message = "未成年少女")
     private Integer age;
+    @NotNull(message = "金额不能为空")
+    private Integer monery;
 
     public Girl(){
 
@@ -52,6 +55,15 @@ public class Girl {
                 "id=" + id +
                 ", cupSize='" + cupSize + '\'' +
                 ", age=" + age +
+                ", monery=" + monery +
                 '}';
+    }
+
+    public Integer getMonery() {
+        return monery;
+    }
+
+    public void setMonery(Integer monery) {
+        this.monery = monery;
     }
 }

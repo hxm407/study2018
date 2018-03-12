@@ -24,4 +24,16 @@ public class GirlService {
         girlB.setCupSize("BBB");
         girlRepository.save(girlB);
     }
+
+    public void getAge(Integer id) throws Exception{
+        Girl girl = girlRepository.findOne(id);
+        Integer age = girl.getAge();
+        if(age <10){
+            //返回“你还在上小学吧”
+            throw new Exception("你还在上小学吧");
+        }else if(age >10 && age <16){
+            //返回 “你可能在上初中”
+            throw new Exception("你可能在上初中");
+        }
+    }
 }

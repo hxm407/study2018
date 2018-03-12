@@ -1,8 +1,10 @@
 package com.xiaoming.boot.contoller;
 
 import com.xiaoming.boot.domain.Girl;
+import com.xiaoming.boot.domain.Result;
 import com.xiaoming.boot.repository.GirlRepository;
 import com.xiaoming.boot.service.GirlService;
+import com.xiaoming.boot.util.ResultUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
@@ -34,16 +36,15 @@ public class GirlController {
 
     //增加一个女生
     @PostMapping(value = "/addgirl")
-    public Girl girlAdd(@Valid Girl girl, BindingResult bindingResult) {
+    public Result<Girl> girlAdd(@Valid Girl girl, BindingResult bindingResult) {
         //bindingResult 返回错误值  @Valid 进行对象校验
         if(bindingResult.hasErrors()){
             System.out.println(bindingResult.getFieldError().getDefaultMessage());
-            return null;
+            return ResultUtil.error(1,bindingResult.getFieldError().getDefaultMessage());
         }
         girl.setCupSize(girl.getCupSize());
         girl.setAge(girl.getAge());
-
-       return girlRepository.save(girl);
+       return ResultUtil.success(girlRepository.save(girl));
     }
 
     //查询一个女生
@@ -79,5 +80,11 @@ public class GirlController {
     @PostMapping(value = "/girls/two")
     public void girlTwo(){
         girlService.insertTwo();
+    }
+
+    @GetMapping(value = "girls/getAge/{id}")
+    public void getAge(@PathVariable("id") Integer id) throws  Exception
+    {
+        girlService.getAge(id);
     }
 }
