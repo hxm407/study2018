@@ -9,7 +9,7 @@
         <module name="study2018" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="study2018" target="1.8" />
     </bytecodeTargetLevel>
   </component>
